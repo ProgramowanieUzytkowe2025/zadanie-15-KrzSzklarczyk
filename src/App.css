@@ -1,0 +1,146 @@
+.App {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  color: #333;
+  padding: 20px;
+  background-color: #f4f4f9;
+  min-height: 100vh;
+}
+
+header {
+  margin-bottom: 20px;
+}
+
+.file-input-wrapper {
+  margin-top: 10px;
+}
+
+.layout-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .layout-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.component-box {
+  background: white;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.component-box h3 {
+  margin-top: 0;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 10px;
+  color: #555;
+  font-size: 1.1rem;
+}
+
+/* Mapa */
+.map-container {
+  display: flex;
+  flex-direction: column;
+  height: 600px;
+}
+
+.svg-wrapper {
+  flex-grow: 1;
+  border: 1px solid #ddd;
+  background-color: #fafafa;
+  margin-bottom: 10px;
+  overflow: hidden;
+  position: relative;
+}
+
+.tsp-svg {
+  width: 100%;
+  height: 100%;
+}
+
+.placeholder {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #aaa;
+}
+
+/* Rozwiązanie */
+.solution-path {
+  font-family: monospace;
+  font-size: 0.9em;
+  color: #666;
+  max-height: 80px;
+  overflow-y: auto;
+  word-wrap: break-word;
+  background: #f8f8f8;
+  padding: 5px;
+  border: 1px solid #eee;
+  margin-bottom: 10px;
+}
+
+.solution-stats {
+  font-size: 1.2em;
+}
+
+/* Panel sterowania */
+.control-panel {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.control-btn {
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.control-btn.start {
+  background-color: #27ae60;
+  color: white;
+}
+
+.control-btn.start:hover {
+  background-color: #219150;
+}
+
+.control-btn.stop {
+  background-color: #e67e22;
+  color: white;
+}
+
+.control-btn:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.stats {
+  font-weight: bold;
+}
+
+button {
+  cursor: pointer;
+  padding: 8px 15px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 4px;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
